@@ -117,5 +117,26 @@ namespace ProyectoRepaso
             man.MdiParent = this;
             man.Show();
         }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultasClientes consultas = new ConsultasClientes();
+            consultas.MdiParent = this;
+            consultas.Show();
+        }
+
+        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultasProductos consultas = new ConsultasProductos();
+            consultas.MdiParent = this;
+            consultas.Show();
+        }
+
+        private void facturaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion facturacion = new Facturacion();
+            facturacion.MdiParent = this;
+            facturacion.Show();
+        }
     }
 }

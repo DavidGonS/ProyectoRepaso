@@ -22,5 +22,11 @@ namespace MyLibraryClass
             set;
             get;
         }
+
+        public Boolean soloNumeros
+        {
+            set;
+            get;
+        }
     }
 }

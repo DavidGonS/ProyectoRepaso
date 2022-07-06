@@ -32,9 +32,10 @@ namespace ProyectoRepaso
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbIdProducto = new MyLibraryClass.ErrorTextBox();
-            this.tbPrecio = new MyLibraryClass.ErrorTextBox();
             this.tbDescripcion = new MyLibraryClass.ErrorTextBox();
+            this.tbPrecio = new MyLibraryClass.ErrorTextBox();
+            this.tbIdProducto = new MyLibraryClass.ErrorTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -87,29 +88,32 @@ namespace ProyectoRepaso
             this.label3.TabIndex = 10;
             this.label3.Text = "Precio:";
             // 
-            // tbIdProducto
+            // tbDescripcion
             // 
-            this.tbIdProducto.Location = new System.Drawing.Point(144, 73);
-            this.tbIdProducto.Name = "tbIdProducto";
-            this.tbIdProducto.Size = new System.Drawing.Size(120, 20);
-            this.tbIdProducto.TabIndex = 11;
-            this.tbIdProducto.validar = true;
+            this.tbDescripcion.Location = new System.Drawing.Point(144, 124);
+            this.tbDescripcion.Name = "tbDescripcion";
+            this.tbDescripcion.Size = new System.Drawing.Size(120, 20);
+            this.tbDescripcion.soloNumeros = false;
+            this.tbDescripcion.TabIndex = 13;
+            this.tbDescripcion.validar = true;
             // 
             // tbPrecio
             // 
             this.tbPrecio.Location = new System.Drawing.Point(144, 174);
             this.tbPrecio.Name = "tbPrecio";
             this.tbPrecio.Size = new System.Drawing.Size(120, 20);
+            this.tbPrecio.soloNumeros = true;
             this.tbPrecio.TabIndex = 12;
             this.tbPrecio.validar = true;
             // 
-            // tbDescripcion
+            // tbIdProducto
             // 
-            this.tbDescripcion.Location = new System.Drawing.Point(144, 124);
-            this.tbDescripcion.Name = "tbDescripcion";
-            this.tbDescripcion.Size = new System.Drawing.Size(120, 20);
-            this.tbDescripcion.TabIndex = 13;
-            this.tbDescripcion.validar = true;
+            this.tbIdProducto.Location = new System.Drawing.Point(144, 73);
+            this.tbIdProducto.Name = "tbIdProducto";
+            this.tbIdProducto.Size = new System.Drawing.Size(120, 20);
+            this.tbIdProducto.soloNumeros = true;
+            this.tbIdProducto.TabIndex = 11;
+            this.tbIdProducto.validar = true;
             // 
             // MantenimientoProductos
             // 
@@ -136,6 +140,7 @@ namespace ProyectoRepaso
             this.Controls.SetChildIndex(this.tbIdProducto, 0);
             this.Controls.SetChildIndex(this.tbPrecio, 0);
             this.Controls.SetChildIndex(this.tbDescripcion, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

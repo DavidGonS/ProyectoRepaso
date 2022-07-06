@@ -42,9 +42,24 @@ namespace MyLibraryClass
                             hayErrores = true;
                         }
                     }
-                    else
+                    if (obj.soloNumeros == true)
                     {
-                        errorProvider.SetError(obj, "");
+                        int contador = 0;
+                        int numeroLetras = 0;
+
+                        foreach (char letra in obj.Text.Trim())
+                        {
+                            if (char.IsLetter(obj.Text.Trim(), contador))
+                            {
+                                numeroLetras++;
+                            }
+                            contador++;
+                        }
+                        if (numeroLetras != 0)
+                        {
+                            hayErrores = true;
+                            errorProvider.SetError(obj, "Solo se aceptan numeros");
+                        }
                     }
                 }
             }

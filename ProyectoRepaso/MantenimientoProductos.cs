@@ -24,7 +24,11 @@ namespace ProyectoRepaso
             {
                 try
                 {
-                    string cmd = string.Format("EXEC ActualizaArticulos '{0}', '{1}', '{2}'", tbIdProducto.Text.Trim(), tbDescripcion.Text.Trim(), tbPrecio.Text.Trim());
+                    string cmd = string.Format(
+                        "EXEC ActualizaArticulos '{0}', '{1}', '{2}'", 
+                        tbIdProducto.Text.Trim(), tbDescripcion.Text.Trim(), tbPrecio.Text.Trim()
+                        );
+
                     Utilidades.ejecutar(cmd);
                     MessageBox.Show("Se ha guardado correctamente");
                     return true;
@@ -45,7 +49,11 @@ namespace ProyectoRepaso
         {
             try
             {
-                string cmd = string.Format("EXEC EliminarArticulos '{0}'", tbIdProducto.Text.Trim());
+                string cmd = string.Format(
+                    "EXEC EliminarArticulos '{0}'", 
+                    tbIdProducto.Text.Trim()
+                    );
+
                 Utilidades.ejecutar(cmd);
                 MessageBox.Show("Se ha eliminado correctamente");
 
