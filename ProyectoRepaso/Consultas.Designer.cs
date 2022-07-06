@@ -32,7 +32,7 @@ namespace ProyectoRepaso
             this.label1 = new System.Windows.Forms.Label();
             this.tbNombreConsulta = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btSeleccionar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,15 +68,15 @@ namespace ProyectoRepaso
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btSeleccionar
             // 
-            this.button3.Location = new System.Drawing.Point(32, 417);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Seleccionar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btSeleccionar.Location = new System.Drawing.Point(32, 417);
+            this.btSeleccionar.Name = "btSeleccionar";
+            this.btSeleccionar.Size = new System.Drawing.Size(144, 23);
+            this.btSeleccionar.TabIndex = 4;
+            this.btSeleccionar.Text = "Seleccionar";
+            this.btSeleccionar.UseVisualStyleBackColor = true;
+            this.btSeleccionar.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -104,7 +104,7 @@ namespace ProyectoRepaso
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btSeleccionar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.tbNombreConsulta);
             this.Controls.Add(this.label1);
@@ -114,7 +114,7 @@ namespace ProyectoRepaso
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.tbNombreConsulta, 0);
             this.Controls.SetChildIndex(this.button2, 0);
-            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.btSeleccionar, 0);
             this.Controls.SetChildIndex(this.button4, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -129,7 +129,7 @@ namespace ProyectoRepaso
         public System.Windows.Forms.DataGridView dataGridView1;
         public System.Windows.Forms.TextBox tbNombreConsulta;
         public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button btSeleccionar;
         public System.Windows.Forms.Button button4;
     }
 }

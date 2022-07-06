@@ -30,6 +30,7 @@ namespace ProyectoRepaso
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,6 +76,10 @@ namespace ProyectoRepaso
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -86,6 +91,9 @@ namespace ProyectoRepaso
             this.dataGridView1.Location = new System.Drawing.Point(36, 192);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(606, 182);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -250,6 +258,7 @@ namespace ProyectoRepaso
             this.btEliminar.TabIndex = 19;
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = true;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
             // btClientes
             // 
@@ -259,6 +268,7 @@ namespace ProyectoRepaso
             this.btClientes.TabIndex = 20;
             this.btClientes.Text = "Clientes";
             this.btClientes.UseVisualStyleBackColor = true;
+            this.btClientes.Click += new System.EventHandler(this.btClientes_Click);
             // 
             // btProductos
             // 
@@ -268,6 +278,7 @@ namespace ProyectoRepaso
             this.btProductos.TabIndex = 21;
             this.btProductos.Text = "Productos";
             this.btProductos.UseVisualStyleBackColor = true;
+            this.btProductos.Click += new System.EventHandler(this.btProductos_Click);
             // 
             // btNuevo
             // 
@@ -277,6 +288,7 @@ namespace ProyectoRepaso
             this.btNuevo.TabIndex = 22;
             this.btNuevo.Text = "Nuevo";
             this.btNuevo.UseVisualStyleBackColor = true;
+            this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
             // 
             // pictureBox1
             // 
